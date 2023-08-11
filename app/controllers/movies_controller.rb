@@ -3,6 +3,8 @@ class MoviesController < ApplicationController
   def index
     @movies = Movie.all
 
+# /!\ ---- Attention pour plus de fonctionalitée de recherche, il faudra instaler des Gem ---- /!\
+
     # 4/ ---------- Permet la recherche entre plusieures mots entier seulelment dans les deux tables ----------
     # if params[:query].present?
     #   sql_subquery = <<~SQL
